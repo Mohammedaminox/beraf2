@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+/*-------------STYLE NAV BAR---------------*/
+/*-------------STYLE NAV BAR---------------*/
+
+
+header {
+    padding: 10px 0;
+    height: 90px;
+}
+
+.container1 nav {
+    display: flex;
+    justify-content: space-between;
+}
+.rightbar{
+    display: flex;
+    align-items: center;
+    color: gray;
+    
+}
+
+.rightbar a{
+    color: gray;
+    padding: 0px 20px;
+}
+.rightbar img{
+    margin: 0 10px;
+}
+
+.leftbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+}
+
+/*-------------STYLE MAIN---------------*/
+/*-------------STYLE MAIN---------------*/
+
+
+/*-------------FIRST SECTION---------------*/
+
+
+.first{
+    margin: 30px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, calc((100% - 90px) / 4));
+    gap: 30px;
+
+}
+
+.Acces {
+    border-bottom: none;
+    background-color: transparent;
+    border: solid rgb(199, 199, 199) 1px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.Acces img {
+    margin: 0px 10px;
+}
+
+.rightmain {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+}
+
+.leftmain{
+    grid-column: 2/5;
+}
+
+
+.cards{
+    background-color: #E2E8F0;
+    border-radius: 5px;
+}
+
+.imgcards img{
+    width: 353px;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.price h2{
+    padding-right: 5px;
+}
+.price h3{
+    color: #5f6772;
+}
+.false{
+    width: 60px;
+    height: 2px;
+    background-color: red;
+    position: relative;
+    right: 55px;
+    rotate: 10deg;
+}
+
+.content{
+    padding: 10px;
+}
+.content .rate{
+    display: flex;
+    align-items: center;
+}
+
+.rate h3{
+    color: gray;
+    margin-right: 120px;
+}
+
+.content h2{
+    margin: 0;
+}
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+.star span{
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, calc((100% - 90px) / 4));
+    gap: 30px;
+}
+.loading{
+    margin: 30px 0px 120px 0px;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background-color: #2c3036;
+    padding: 10px 0px;
+    
+}
+
+footer .foot {
+    display: flex;
+    justify-content: center;
+    color: #E2E8F0;
+}
+footer h2{
+    padding: 0px 40px;
+}
+footer h4{
+    display: flex;
+    justify-content: center;
+    color: #5f6772;
+    
+}
+
+
+/*-------------PAGE 2---------------*/
+/*-------------PAGE 2---------------*/
+/*-------------PAGE 2---------------*/
+/*-------------PAGE 2---------------*/
+/*-------------PAGE 2---------------*/
+/*-------------PAGE 2---------------*/
+
+
+#sort{
+    height: 30px;
+    border-radius: 5px;
+}
+
+#productmain{
+    display: grid;
+    grid-template-columns: repeat(4, calc((100% - 90px) / 4));
+    gap: 30px;
+}
+.result{
+    display: flex;
+    align-items: center;
+    grid-column: 2 / 5;
+    justify-content: space-between;
+}
+.sortby{
+    padding-right: 25px;
+}
+
+.result h2 span{
+    color: #FACC15;
+}
+.free{
+    display: flex;
+    grid-column: 2 / 4;
+    justify-content: space-between;
+
+}
+.cardsprod{
+    display: grid;
+    grid-template-columns: repeat(3, calc((100% - 60px) / 3));
+    gap: 30px;
+
+    grid-column: 2 / 5;
+}
+#marqueh1{
+    font-size: 2em;
+    margin: 0;
+    padding-top: 50px;
+
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+.checks{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  
+}
+
+.check label{
+    font-size: 1.8em;
+    padding-left: 20px;
+}
+.check input{
+    width: 1.8em;
+    height: 1.8em;
+}
+#shoph1 h1{
+    font-size: 2em;
+    margin: 0;
+}
+#priceh1 h1{
+    font-size: 2em;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
