@@ -632,6 +632,18 @@ aside{
     align-items: center;
 }
 
+.container a:active{
+    color: black;
+}
+.container a:visited{
+    color: black;
+}
+.cardsprod a:active{
+    color: black;
+}
+.cardsprod a:visited{
+    color: black;
+}
 
 
 
