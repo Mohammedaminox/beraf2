@@ -42,7 +42,6 @@ header {
 
 .leftbar{
     display: flex;
-    justify-content: flex-end;
     align-items: center;    
 }
 
@@ -93,7 +92,7 @@ header {
 }
 
 .imgcards img{
-    width: 353px;
+    width: 100%;
 }
 .price{
     display: flex;
@@ -645,6 +644,184 @@ aside{
 }
 .cardsprod a:visited{
     color: black;
+}
+
+/*------CONTACT-STYLE-------*/
+#maincontact h1{
+    display: flex;
+    justify-content: center;
+    font-size: 300%;
+    margin-top: 80px;
+}
+.fullform{
+    display: flex;
+    justify-content: center;
+}
+.clientform{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+form{
+    width: 90%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.form input{
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: #a3a5a8 solid 2px;
+}
+form button{
+    display: block;
+    border: rgb(211, 211, 4) 1px solid;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #FACC15;
+    color: aliceblue;
+    font-size: 2em;
+    width: 50%;
+    margin-bottom: 50px;
+}
+.message{
+    width: 50%;
+    
+}
+
+.message textarea{
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 15px;
+    border: 2px solid #a3a5a8;
+    
+}
+.email , .address , .phone{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 90px;
+}
+.email img , .address img , .phone img{
+    min-width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.email h3, .address h3, .phone h3{
+    margin: 0;
+    color: #FACC15;
+}
+.email h3 span, .address h3 span, .phone h3 span{
+    color: black;
+}
+.amazoncontact{
+    margin-bottom: 90px;
+}
+.burger{
+    display: none;
+}
+.leftbar a input{
+    width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media ( max-width : 1300px) {
+
+    .rightbar{
+        display: none;
+    }
+    .burger{
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+    }
+    .burger img{
+        width: 50px;
+        margin-right: 20px;
+    }
+    .container1{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .container1 nav {
+        flex: 1;
+    }
+    .leftbar{
+        width: 100%;
+    }
+    .leftbar a{
+        flex: 1;
+    }
+    .leftbar a input{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media ( max-width : 900px) {
+    #maincontact h1{
+        font-size: 200%;
+        margin-top: 40px;
+    }
+    .email, .address, .phone{
+        margin-left: 50px;
+    }
+    .clientform{
+        display: block;
+        justify-content: center;
+    }
+    .form{
+        width: 100%;
+    }
+    .message{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .amazoncontact{
+        margin-bottom: 60px;
+    }
+    footer .foot{
+        font-size: 80%;
+    }
+}
+@media ( max-width : 520px){
+    .email, .address, .phone{
+        font-size: 70%;
+    }
+    .email, .address{
+        margin-top: 20px;
+    }
 }
 
 
