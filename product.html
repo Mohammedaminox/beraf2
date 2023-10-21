@@ -8,37 +8,125 @@
 </head>
 <body>
 
-
-    <header>
-        <div class="container1">
-
-            <nav>
-                <div class="leftbar">
-                    <img src="images/Amazon.png" alt="amazon">
-                    <input type="text" placeholder="keyboard" style="width: 600px; height: 40px; border-radius: 10px; padding-left: 15px;">
-                </div>
-
-                <div class="rightbar">
-                    <a href="">
-                        <h3>Sing In</h3>
-                    </a>
-                    <h1>|</h1>
-                    <a href="">
-                        <h3>Create account</h3>
-                    </a>
-                    <img src="images/maroc.png" alt="maroc">
-                    <a href="payement.html">
-                      <img src="images/panier.png" alt="panier">
-                    </a>
-                    
-                </div>
-
-            </nav>
+  <header>
+    <div class="container1">
+      <nav>
+        <div class="leftbar">
+          <img src="images/Amazon.png" alt="amazon" />
+          <a href="product.html">
+            <input
+            type="text"
+            placeholder="Chercher un produit,une marque ou categorie..."
+            style="
+              height: 40px;
+              border-radius: 10px;
+              padding-left: 15px;
+            "
+          />
+          </a>
         </div>
-        <hr>
-    </header>
+
+        <div class="rightbar">
+          <a href="">
+            <h3>Sing In</h3>
+          </a>
+          <h1>|</h1>
+          <a href="">
+            <h3>Create account</h3>
+          </a>
+          <img src="images/maroc.png" alt="maroc" />
+          <img src="images/panier.png" alt="panier" id="sidepanier" onclick="afficheSide()"/>
+          
+        </div>
+      </nav>
+      <button class="burger">
+            <img src="images/burger.png" alt="">
+      </button>
+    </div>
+    <hr />
+  </header>
 
     <main id="productmain">
+      <div class="SIDEBAR">
+        <div class="endclose">
+          <img src="images/close.png" alt="" class="closebar" onclick="closeSide()">
+        </div>
+        <h1>Shopping Cart</h1>
+
+
+
+          <div class="sidecards">
+            <div class="sideimg">
+              
+            </div>
+            <div class="sidecontent">
+              <h3>product name</h3>
+              <p>Lorem, ipsum.</p>
+              <p>$1900</p>
+              <div class="numbr" style="margin: 0;">
+                <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+                <span class="counterQuantity">01</span>
+                <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
+                <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+                  <img src="images/trash.png" alt="">
+                </button>
+            </div>
+
+            </div>
+
+        </div>
+        <div class="sidecards">
+          <div class="sideimg">
+            
+          </div>
+          <div class="sidecontent">
+            <h3>product name</h3>
+            <p>Lorem, ipsum.</p>
+            <p>$1900</p>
+            <div class="numbr" style="margin: 0;">
+              <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+              <span class="counterQuantity">01</span>
+              <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
+              <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+                <img src="images/trash.png" alt="">
+              </button>
+          </div>
+
+          </div>
+
+      </div>
+      <div class="sidecards">
+        <div class="sideimg">
+          
+        </div>
+        <div class="sidecontent">
+          <h3>product name</h3>
+          <p>Lorem, ipsum.</p>
+          <p>$1900</p>
+          <div class="numbr" style="margin: 0;">
+            <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+            <span class="counterQuantity">01</span>
+            <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
+            <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+              <img src="images/trash.png" alt="">
+            </button>
+        </div>
+
+        </div>
+
+    </div>
+
+          
+
+    <div class="sidetotal">
+      <h3>Total :</h3>
+      <p>$1900</p>
+    </div>
+    <a href="payement.html">
+      <button>More</button>
+    </a>
+
+    </div>
 
            
 
@@ -658,6 +746,6 @@
         <h4>Copy Right 2023</h4>
       </footer>
 
-
+      <script src="script.js"></script>
 </body>
 </html>

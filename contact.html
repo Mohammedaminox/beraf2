@@ -37,9 +37,7 @@
                 <h3>Create account</h3>
               </a>
               <img src="images/maroc.png" alt="maroc" />
-              <a href="payement.html">
-                <img src="images/panier.png" alt="panier" />
-              </a>
+              <img src="images/panier.png" alt="panier" id="sidepanier" onclick="afficheSide()"/>
               
             </div>
           </nav>
@@ -49,7 +47,88 @@
         </div>
         <hr />
       </header>
+      <div class="SIDEBAR">
+        <div class="endclose">
+          <img src="images/close.png" alt="" class="closebar" onclick="closeSide()">
+        </div>
+        <h1>Shopping Cart</h1>
+
+
+
+          <div class="sidecards">
+            <div class="sideimg">
+              
+            </div>
+            <div class="sidecontent">
+              <h3>product name</h3>
+              <p>Lorem, ipsum.</p>
+              <p>$1900</p>
+              <div class="numbr" style="margin: 0;">
+                <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+                <span class="counterQuantity">01</span>
+                <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
+                <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+                  <img src="images/trash.png" alt="">
+                </button>
+            </div>
+
+            </div>
+
+        </div>
+        <div class="sidecards">
+          <div class="sideimg">
+            
+          </div>
+          <div class="sidecontent">
+            <h3>product name</h3>
+            <p>Lorem, ipsum.</p>
+            <p>$1900</p>
+            <div class="numbr" style="margin: 0;">
+              <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+              <span class="counterQuantity">01</span>
+              <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
+              <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+                <img src="images/trash.png" alt="">
+              </button>
+          </div>
+
+          </div>
+
+      </div>
+      <div class="sidecards">
+        <div class="sideimg">
+          
+        </div>
+        <div class="sidecontent">
+          <h3>product name</h3>
+          <p>Lorem, ipsum.</p>
+          <p>$1900</p>
+          <div class="numbr" style="margin: 0;">
+            <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+            <span class="counterQuantity">01</span>
+            <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
+            <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+              <img src="images/trash.png" alt="">
+            </button>
+        </div>
+
+        </div>
+
+    </div>
+
+          
+
+    <div class="sidetotal">
+      <h3>Total :</h3>
+      <p>$1900</p>
+    </div>
+    <a href="payement.html">
+      <button>More</button>
+    </a>
+
+    </div>
       <main id="maincontact">
+
             <h1>GET IN TOUCH WITH US</h1>
             <div class="amazoncontact">
                 <div class="phone">
@@ -97,5 +176,6 @@
 
         <h4>Copy Right 2023</h4>
       </footer>
+      <script src="script.js"></script>
 </body>
 </html>
