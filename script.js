@@ -1,47 +1,76 @@
-
-const panier = document.getElementsByClassName("SIDEBAR");
+let SideBar = document.querySelector(".SIDEBAR");
+let plusButtons = document.querySelectorAll(".plus")
+let moinButtons = document.querySelectorAll(".moin")
+let counterQuantity = document.querySelectorAll(".counterQuantity")
+let cardPrice = document.querySelectorAll(".cardprice")
+let cardTotal = document.querySelectorAll(".cardtotal")
+let sideCards = document.querySelectorAll(".sidecards")
+let removeButtons = document.querySelectorAll(".btn-trash");
 
 function afficheSide() {
-    panier[0].style.display = 'block';
+    SideBar.style.display = "block";
 }
-
 function closeSide() {
-    panier[0].style.display = 'none';
-}
-
-const plusButtons = document.querySelectorAll(".plus");
-const moinButtons = document.querySelectorAll(".moin");
-const quantityElements = document.querySelectorAll(".counterQuantity");
-let removeCard = document.getElementsByClassName("btn-trash");
-console.log(removeCard);
-for(let i = 0 ; i < removeCard.length ; i++ ){
-    let button = removeCard[i]
-    button.addEventListener("click", function (event) {
-        let buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.parentElement.parentElement.remove()
-    })
+    SideBar.style.display = "none"
 }
 
 plusButtons.forEach((button, index) => {
-    let a = 1;
-    button.addEventListener("click", () => {
+    button.addEventListener("click", function(){
+        let a = counterQuantity[index].innerText;
+        console.log(a)
         a++;
-        if (a < 10) {
-            a = (a < 10) ? "0" + a : a;
+        if (a < 10){
+            a = "0" + a;
         }
-        quantityElements[index].innerText = a;
-    });
-});
+        counterQuantity[index].innerText = a;
+        Total();
+
+    })
+    
+})
 
 moinButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-        let a = quantityElements[index].innerText;
-        if (a > 1) {
+    
+    button.addEventListener("click", function(){
+        let a = counterQuantity[index].innerText;
+        if (a > 1){
             a--;
-            a = (a < 10) ? "0" + a : a;
-            quantityElements[index].innerText = a;
+            if (a < 10){
+                a = "0" + a;
+            }
+            counterQuantity[index].innerText = a;
+            Total();
         }
+    })
+    
+})
+
+removeButtons.forEach((button, index) => {
+    button.addEventListener("click", function () {
+        sideCards[index].remove();
+        Total();
+    
     });
+        
 });
+
+function Total() {
+    let totalPrice = 0
+    for(let i = 0 ; i < document.querySelectorAll(".sidecards").length ; i++){
+        const quantity = parseInt(document.querySelectorAll(".counterQuantity")[i].innerText);
+        const price = 120;
+        totalPrice += quantity * price;
+        cardTotal[0].innerText = totalPrice;
+        cardTotal[0].innerText = cardTotal[0].innerText + "$"
+        cardTotal[1].innerText = totalPrice;
+        cardTotal[1].innerText = cardTotal[1].innerText + "$"
+        
+    }
+    if(document.querySelectorAll(".sidecards").length === 0){
+        cardTotal.innerText = "$0"
+    }
+}
+
+
 
 
