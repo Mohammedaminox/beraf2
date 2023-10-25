@@ -9,31 +9,141 @@
 <body>
     <header>
         <div class="container1">
-
-            <nav>
-                <div class="leftbar">
-                    <img src="images/Amazon.png" alt="amazon">
-                    <input type="text" placeholder="keyboard" style="width: 600px; height: 40px; border-radius: 10px; padding-left: 15px;">
-                </div>
-
-                <div class="rightbar">
-                    <a href="">
-                        <h3>Sing In</h3>
-                    </a>
-                    <h1>|</h1>
-                    <a href="">
-                        <h3>Create account</h3>
-                    </a>
-                    <img src="images/maroc.png" alt="maroc">
-                    <img src="images/panier.png" alt="panier">
-                </div>
-
-            </nav>
+          <nav>
+            <div class="leftbar">
+              <img src="images/Amazon.png" alt="amazon" />
+              <a href="product.html">
+                <input
+                type="text"
+                placeholder="Chercher un produit,une marque ou categorie..."
+                style="
+                  height: 40px;
+                  border-radius: 10px;
+                  padding-left: 15px;
+                "
+              />
+              </a>
+            </div>
+  
+            <div class="rightbar">
+              <a href="">
+                <h3>Sing In</h3>
+              </a>
+              <h1>|</h1>
+              <a href="">
+                <h3>Create account</h3>
+              </a>
+              <img src="images/maroc.png" alt="maroc" />
+              <img src="images/panier.png" alt="panier" id="sidepanier" onclick="afficheSide()"/>
+              
+            </div>
+          </nav>
+          <button class="burger" onclick="showBurger()">
+                <img src="images/burger.png" alt="">
+          </button>
         </div>
-        <hr>
-    </header>
+        <hr />
+      </header>
+      <div class="menuBurger hideMenuburger">
+        <button>
+          <h3>Sing In</h3>
+  
+        </button>
+        <button>
+          <h3>Create account</h3>
+  
+        </button>
+        <button onclick="afficheSide()">
+          <img src="images/panier.png" alt="panier" id="sidepanier" />
+  
+        </button>
+          
+  
+      </div>
 
     <main id="mainpay">
+        <div class="SIDEBAR">
+            <div class="endclose">
+              <img src="images/close.png" alt="" class="closebar" onclick="closeSide()">
+            </div>
+            <h1>Shopping Cart</h1>
+    
+    
+    
+    
+          <div class="sidecards">
+            <div class="sideimg">
+              
+            </div>
+            <div class="sidecontent">
+              <h3>product name</h3>
+              <p>Lorem, ipsum.</p>
+              <p class="cardprice">$120</p>
+              <div class="numbr" style="margin: 0;">
+                <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+                <span class="counterQuantity">01</span>
+                <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
+                <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+                  <img src="images/trash.png" alt="">
+                </button>
+            </div>
+    
+            </div>
+    
+        </div>
+        <div class="sidecards">
+          <div class="sideimg">
+            
+          </div>
+          <div class="sidecontent">
+            <h3>product name</h3>
+            <p>Lorem, ipsum.</p>
+            <p class="cardprice">$120</p>
+            <div class="numbr" style="margin: 0;">
+              <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+              <span class="counterQuantity">01</span>
+              <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
+              <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+                <img src="images/trash.png" alt="">
+              </button>
+          </div>
+    
+          </div>
+    
+      </div>
+      <div class="sidecards">
+        <div class="sideimg">
+          
+        </div>
+        <div class="sidecontent">
+          <h3>product name</h3>
+          <p>Lorem, ipsum.</p>
+          <p class="cardprice">$120</p>
+          <div class="numbr" style="margin: 0;">
+            <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+            <span class="counterQuantity">01</span>
+            <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
+            <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+              <img src="images/trash.png" alt="">
+            </button>
+        </div>
+    
+        </div>
+    
+    </div>
+    
+              
+    
+        <div class="sidetotal">
+          <h3>Total :</h3>
+          <p class="cardtotal">$360</p>
+        </div>
+        <a href="payement.html">
+          <button>More</button>
+        </a>
+    
+        </div>
+    
         <div class="select">
             <div class="selectitle">
                 <input type="checkbox">
@@ -42,67 +152,77 @@
             <hr>
 
             <div class="selectmain">
-                <div class="slec1" style="display: flex;">
+                <div class="slec1" class="sidecards" style="display: flex;">
                     <input type="checkbox">
                     <div class="square"></div>
                     <div class="nextsquare">
                         <div class="podcoeur">
                             <h3 style="margin: 0;">Product Name</h3>
-                            <img src="images/coeur.png" alt="">
+                            <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+                                <img src="images/trash.png" alt="">
+                              </button>
+                            <img src="images/coeur.png" alt="" style="margin-left: 25px;">
                         </div>
 
                         <div class="vue"><h4 style="margin: 0; padding: 3px 0px; text-align: center;">Selected Vue le 31</h4></div>
-                        <p style="margin: 0;">$1960</p>
+                        <p style="margin: 0;" class="cardprice">$120</p>
                         <div class="shipnmbr">
-                            <p style="margin: 0;">Shipping :15$</p>
+                            <p style="margin: 0;">Shipping :0$</p>
                             <div class="numbr" style="margin: 0;">
-                                <div class="plus" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
-                                <span>1</span>
-                                <div class="moin" style="color: aliceblue; background-color: #facc15;">+</div>
+                                <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+                                <span class="counterQuantity">01</span>
+                                <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
+                                
                             </div>
     
                         </div>
     
                     </div>
                 </div>
-                <div class="slec1" style="display: flex;">
+                <div class="slec1" class="sidecards" style="display: flex;">
                     <input type="checkbox">
                     <div class="square"></div>
                     <div class="nextsquare">
                         <div class="podcoeur">
                             <h3 style="margin: 0;">Product Name</h3>
-                            <img src="images/coeur.png" alt="">
+                            <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+                                <img src="images/trash.png" alt="">
+                              </button>
+                            <img src="images/coeur.png" alt="" style="margin-left: 25px;">
                         </div>
                         <div class="vue"><h4 style="margin: 0; padding: 3px 0px; text-align: center;">Selected Vue le 31</h4></div>
-                        <p style="margin: 0;">$1960</p>
+                        <p style="margin: 0;" class="cardprice">$120</p>
                         <div class="shipnmbr">
-                            <p style="margin: 0;">Shipping :15$</p>
+                            <p style="margin: 0;">Shipping :0$</p>
                             <div class="numbr" style="margin: 0;">
-                                <div class="plus" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
-                                <span>1</span>
-                                <div class="moin" style="color: aliceblue; background-color: #facc15;">+</div>
+                                <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+                                <span class="counterQuantity">01</span>
+                                <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
                             </div>
     
                         </div>
     
                     </div>
                 </div>
-                <div class="slec1" style="display: flex;">
+                <div class="slec1" class="sidecards" style="display: flex;">
                     <input type="checkbox">
                     <div class="square"></div>
                     <div class="nextsquare">
                         <div class="podcoeur">
                             <h3 style="margin: 0;">Product Name</h3>
-                            <img src="images/coeur.png" alt="">
+                            <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+                                <img src="images/trash.png" alt="">
+                              </button>
+                            <img src="images/coeur.png" alt="" style="margin-left: 25px;">
                         </div>
                         <div class="vue"><h4 style="margin: 0; padding: 3px 0px; text-align: center;">Selected Vue le 31</h4></div>
-                        <p style="margin: 0;">$1960</p>
+                        <p style="margin: 0;" class="cardprice">$120</p>
                         <div class="shipnmbr">
-                            <p style="margin: 0;">Shipping :15$</p>
+                            <p style="margin: 0;">Shipping :0$</p>
                             <div class="numbr" style="margin: 0;">
-                                <div class="plus" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
-                                <span>1</span>
-                                <div class="moin" style="color: aliceblue; background-color: #facc15;">+</div>
+                                <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+                                <span class="counterQuantity">01</span>
+                                <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
                             </div>
     
                         </div>
@@ -115,13 +235,6 @@
 
             </div>
         </div>
-
-
-
-
-
-
-
 
 
         <div class="pay">
@@ -138,7 +251,7 @@
             </div>
             <div class="payinfo">
                 <span>Total</span>
-                <span>us 56402</span>
+                <span class="cardtotal">$360</span>
             </div>
             <button id="check">Check out</button>
             <hr>
@@ -148,5 +261,6 @@
 
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -21,7 +21,6 @@
               type="text"
               placeholder="Chercher un produit,une marque ou categorie..."
               style="
-                width: 600px;
                 height: 40px;
                 border-radius: 10px;
                 padding-left: 15px;
@@ -31,7 +30,7 @@
           </div>
 
           <div class="rightbar">
-            <a href="contact.html">
+            <a href="">
               <h3>Sing In</h3>
             </a>
             <h1>|</h1>
@@ -39,23 +38,126 @@
               <h3>Create account</h3>
             </a>
             <img src="images/maroc.png" alt="maroc" />
-            <a href="payement.html">
-              <img src="images/panier.png" alt="panier" />
-            </a>
+            <img src="images/panier.png" alt="panier" id="sidepanier" onclick="afficheSide()"/>
             
           </div>
         </nav>
+        <button class="burger" onclick="showBurger()">
+          <img src="images/burger.png" alt="">
+        </button>
       </div>
       <hr />
     </header>
+    <div class="menuBurger hideMenuburger">
+      <button>
+        <h3>Sing In</h3>
+
+      </button>
+      <button>
+        <h3>Create account</h3>
+
+      </button>
+      <button onclick="afficheSide()">
+        <img src="images/panier.png" alt="panier" id="sidepanier" />
+
+      </button>
+        
+
+    </div>
 
     <!--------------- MAIN SECTION ---------------->
     <!--------------- MAIN SECTION ---------------->
     <!--------------- MAIN SECTION ---------------->
 
     <main>
+      <div class="SIDEBAR">
+        <div class="endclose">
+          <img src="images/close.png" alt="" class="closebar" onclick="closeSide()">
+        </div>
+        <h1>Shopping Cart</h1>
+
+
+
+
+      <div class="sidecards">
+        <div class="sideimg">
+          
+        </div>
+        <div class="sidecontent">
+          <h3>product name</h3>
+          <p>Lorem, ipsum.</p>
+          <p class="cardprice">$120</p>
+          <div class="numbr" style="margin: 0;">
+            <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+            <span class="counterQuantity">01</span>
+            <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
+            <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+              <img src="images/trash.png" alt="">
+            </button>
+        </div>
+
+        </div>
+
+    </div>
+    <div class="sidecards">
+      <div class="sideimg">
+        
+      </div>
+      <div class="sidecontent">
+        <h3>product name</h3>
+        <p>Lorem, ipsum.</p>
+        <p class="cardprice">$120</p>
+        <div class="numbr" style="margin: 0;">
+          <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+          <span class="counterQuantity">01</span>
+          <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
+          <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+            <img src="images/trash.png" alt="">
+          </button>
+      </div>
+
+      </div>
+
+  </div>
+  <div class="sidecards">
+    <div class="sideimg">
+      
+    </div>
+    <div class="sidecontent">
+      <h3>product name</h3>
+      <p>Lorem, ipsum.</p>
+      <p class="cardprice">$120</p>
+      <div class="numbr" style="margin: 0;">
+        <div class="moin" style="color: rgb(120, 125, 129); background-color: #d8d8d7;">-</div>
+        <span class="counterQuantity">01</span>
+        <div class="plus" style="color: aliceblue; background-color: #facc15;">+</div>
+        <button style="margin-left: auto; border-radius: 5px; height: 23px;" class="btn-trash">
+          <img src="images/trash.png" alt="">
+        </button>
+    </div>
+
+    </div>
+
+</div>
+
+          
+
+    <div class="sidetotal">
+      <h3>Total :</h3>
+      <p class="cardtotal">$360</p>
+    </div>
+    <a href="payement.html">
+      <button>More</button>
+    </a>
+    
+  </div>
+  
+  
+  
+  
       <section class="first">
-        <div class="rightmain">
+        <button class="filter" onclick ="showFilter()"><span>Filters</span></button>
+        <div class="rightmain hideRightmain">
           <button class="Acces">
             <img src="images/accessoires.png" alt="" />Accessoires
           </button>
@@ -90,6 +192,7 @@
             <img src="images/accessoires.png" alt="" />Accessoires
           </button>
         </div>
+
         <div class="leftmain">
           <img src="images/female.png" alt="modle image" />
         </div>
@@ -622,6 +725,6 @@
 
         <h4>Copy Right 2023</h4>
       </footer>
-    
+    <script src="script.js"></script>
   </body>
 </html>

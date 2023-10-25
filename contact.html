@@ -1,101 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!--------------- HEADER SECTION ---------------->
     <!--------------- HEADER SECTION ---------------->
 
     <header>
-        <div class="container1">
-          <nav>
-            <div class="leftbar">
-              <img src="images/Amazon.png" alt="amazon" />
-              <a href="product.html">
-                <input
+      <div class="container1">
+        <nav>
+          <div class="leftbar">
+            <img src="images/Amazon.png" alt="amazon" />
+            <a href="product.html">
+              <input
                 type="text"
                 placeholder="Chercher un produit,une marque ou categorie..."
-                style="
-                  height: 40px;
-                  border-radius: 10px;
-                  padding-left: 15px;
-                "
+                style="height: 40px; border-radius: 10px; padding-left: 15px"
               />
-              </a>
+            </a>
+          </div>
+
+          <div class="rightbar">
+            <a href="">
+              <h3>Sing In</h3>
+            </a>
+            <h1>|</h1>
+            <a href="">
+              <h3>Create account</h3>
+            </a>
+            <img src="images/maroc.png" alt="maroc" />
+            <img
+              src="images/panier.png"
+              alt="panier"
+              id="sidepanier"
+              onclick="afficheSide()"
+            />
+          </div>
+        </nav>
+        <button class="burger" onclick="showBurger()">
+          <img src="images/burger.png" alt="" />
+        </button>
+      </div>
+      <hr />
+    </header>
+    <div class="menuBurger hideMenuburger">
+      <button>
+        <h3>Sing In</h3>
+
+      </button>
+      <button>
+        <h3>Create account</h3>
+
+      </button>
+      <button onclick="afficheSide()">
+        <img src="images/panier.png" alt="panier" id="sidepanier" />
+
+      </button>
+        
+
+    </div>
+    <div class="SIDEBAR">
+      <div class="endclose">
+        <img
+          src="images/close.png"
+          alt=""
+          class="closebar"
+          onclick="closeSide()"
+        />
+      </div>
+      <h1>Shopping Cart</h1>
+
+      <div class="sidecards">
+        <div class="sideimg"></div>
+        <div class="sidecontent">
+          <h3>product name</h3>
+          <p>Lorem, ipsum.</p>
+          <p class="cardprice">$120</p>
+          <div class="numbr" style="margin: 0">
+            <div
+              class="moin"
+              style="color: rgb(120, 125, 129); background-color: #d8d8d7"
+            >
+              -
             </div>
-  
-            <div class="rightbar">
-              <a href="">
-                <h3>Sing In</h3>
-              </a>
-              <h1>|</h1>
-              <a href="">
-                <h3>Create account</h3>
-              </a>
-              <img src="images/maroc.png" alt="maroc" />
-              <a href="payement.html">
-                <img src="images/panier.png" alt="panier" />
-              </a>
-              
+            <span class="counterQuantity">01</span>
+            <div
+              class="plus"
+              style="color: aliceblue; background-color: #facc15"
+            >
+              +
             </div>
-          </nav>
-          <button class="burger">
-                <img src="images/burger.png" alt="">
-          </button>
+            <button
+              style="margin-left: auto; border-radius: 5px; height: 23px"
+              class="btn-trash"
+            >
+              <img src="images/trash.png" alt="" />
+            </button>
+          </div>
         </div>
-        <hr />
-      </header>
-      <main id="maincontact">
-            <h1>GET IN TOUCH WITH US</h1>
-            <div class="amazoncontact">
-                <div class="phone">
-                    <img src="images/phone.png" alt="">
-                    <h3><span>Phone :</span> +212 612554896</h3>
-                </div>
-                <div class="email">
-                    <img src="images/email.png" alt="">
-                    <h3><span>E-mail :</span> Amazon.aziz@gmail.com</h3>
-                </div>
-                <div class="address">
-                    <img src="images/adderess.png" alt="">
-                    <h3><span>Address :</span> N27 QU Smara Youssoufia Maroc</h3>
-                </div>
+      </div>
+      <div class="sidecards">
+        <div class="sideimg"></div>
+        <div class="sidecontent">
+          <h3>product name</h3>
+          <p>Lorem, ipsum.</p>
+          <p class="cardprice">$120</p>
+          <div class="numbr" style="margin: 0">
+            <div
+              class="moin"
+              style="color: rgb(120, 125, 129); background-color: #d8d8d7"
+            >
+              -
             </div>
-            <div class="fullform">
-                <form action="">
-                    <div class="clientform">
-                        <div class="form">
-                            <input type="text" placeholder="FIRST NAME :" required>
-                            <input type="text" placeholder="LAST NAME :" required>
-                            <input type="email" placeholder="YOUR E-MAIL :" required>
-                            <input type="tel" pattern="[0-9]{10}" placeholder="YOUR PHONE :" required>
-                            
-                        </div>
-                        <div class="message">
-                            <textarea id="message" rows="15" placeholder="Message " required></textarea>
-                        </div>
-                    </div>
-                    <button type="submit">SUBMIT</button>
-                </form>
+            <span class="counterQuantity">01</span>
+            <div
+              class="plus"
+              style="color: aliceblue; background-color: #facc15"
+            >
+              +
             </div>
-
-      </main>
-      
-      <!--------------- FOOTER SECTION ---------------->
-      <!--------------- FOOTER SECTION ---------------->
-
-      <footer>
-        <div class="foot">
-          <h2>About</h2>
-          <h2>Support</h2>
-          <h2>FQA</h2>
+            <button
+              style="margin-left: auto; border-radius: 5px; height: 23px"
+              class="btn-trash"
+            >
+              <img src="images/trash.png" alt="" />
+            </button>
+          </div>
         </div>
+      </div>
+      <div class="sidecards">
+        <div class="sideimg"></div>
+        <div class="sidecontent">
+          <h3>product name</h3>
+          <p>Lorem, ipsum.</p>
+          <p class="cardprice">$120</p>
+          <div class="numbr" style="margin: 0">
+            <div
+              class="moin"
+              style="color: rgb(120, 125, 129); background-color: #d8d8d7"
+            >
+              -
+            </div>
+            <span class="counterQuantity">01</span>
+            <div
+              class="plus"
+              style="color: aliceblue; background-color: #facc15"
+            >
+              +
+            </div>
+            <button
+              style="margin-left: auto; border-radius: 5px; height: 23px"
+              class="btn-trash"
+            >
+              <img src="images/trash.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
 
-        <h4>Copy Right 2023</h4>
-      </footer>
-</body>
+      <div class="sidetotal">
+        <h3>Total :</h3>
+        <p class="cardtotal">$360</p>
+      </div>
+      <a href="payement.html">
+        <button>More</button>
+      </a>
+    </div>
+
+    <main id="maincontact">
+      <h1>GET IN TOUCH WITH US</h1>
+      <div class="amazoncontact">
+        <div class="phone">
+          <img src="images/phone.png" alt="" />
+          <h3><span>Phone :</span> +212 612554896</h3>
+        </div>
+        <div class="email">
+          <img src="images/email.png" alt="" />
+          <h3><span>E-mail :</span> Amazon.aziz@gmail.com</h3>
+        </div>
+        <div class="address">
+          <img src="images/adderess.png" alt="" />
+          <h3><span>Address :</span> N27 QU Smara Youssoufia Maroc</h3>
+        </div>
+      </div>
+      <div class="fullform">
+        <form action="">
+          <div class="clientform">
+            <div class="form">
+              <input type="text" placeholder="FIRST NAME :" required />
+              <input type="text" placeholder="LAST NAME :" required />
+              <input type="email" placeholder="YOUR E-MAIL :" required />
+              <input
+                type="tel"
+                pattern="[0-9]{10}"
+                placeholder="YOUR PHONE :"
+                required
+              />
+            </div>
+            <div class="message">
+              <textarea
+                id="message"
+                rows="15"
+                placeholder="Message "
+                required
+              ></textarea>
+            </div>
+          </div>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </main>
+
+    <!--------------- FOOTER SECTION ---------------->
+    <!--------------- FOOTER SECTION ---------------->
+
+    <footer>
+      <div class="foot">
+        <h2>About</h2>
+        <h2>Support</h2>
+        <h2>FQA</h2>
+      </div>
+
+      <h4>Copy Right 2023</h4>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
