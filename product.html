@@ -39,12 +39,28 @@
           
         </div>
       </nav>
-      <button class="burger">
+      <button class="burger" onclick="showBurger()">
             <img src="images/burger.png" alt="">
       </button>
     </div>
     <hr />
   </header>
+  <div class="menuBurger hideMenuburger">
+    <button>
+      <h3>Sing In</h3>
+
+    </button>
+    <button>
+      <h3>Create account</h3>
+
+    </button>
+    <button onclick="afficheSide()">
+      <img src="images/panier.png" alt="panier" id="sidepanier" />
+
+    </button>
+      
+
+  </div>
 
     <main id="productmain">
       <div class="SIDEBAR">
@@ -131,19 +147,20 @@
 
 
            
-
-        <div class="result">
-            <h2>1-12 over 7000 result for <span>"keyboard"</span></h2>
-            <div class="sortby">
-                <label for="sort">Sort by :</label>
-                <select name="sort" id="sort">
-                    <option value="most reviewed">Most Reviewed</option>
-                    <option value="new arrivels">New Arrivels</option>
-                    <option value="price low">Price:Low to High</option>
-                    <option value="price high">Price:High To Low</option>
-                </select>
-            </div>
-
+    
+    <div class="result">
+      <h2>1-12 over 7000 result for <span>"keyboard"</span></h2>
+      <div class="sortby">
+        <label for="sort">Sort by :</label>
+        <select name="sort" id="sort">
+          <option value="most reviewed">Most Reviewed</option>
+          <option value="new arrivels">New Arrivels</option>
+          <option value="price low">Price:Low to High</option>
+          <option value="price high">Price:High To Low</option>
+        </select>
+      </div>
+      
+      <button class="marquesMenu" onclick="showMarques()"><h2>Filters</h2></button>
         </div>
         <div class="free">
             <label for="">free Shopping</label>
@@ -154,7 +171,7 @@
             <input type="radio" name="sho">
             <label for="" style="color:#FACC15;">Clear All filters</label>
         </div>
-        <aside>
+        <aside class="marques hideMarques">
             <div>
                 <h1 id="marqueh1">Marques</h1>
             </div>

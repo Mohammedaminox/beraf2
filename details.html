@@ -42,12 +42,28 @@
             
           </div>
         </nav>
-        <button class="burger">
+        <button class="burger" onclick="showBurger()">
               <img src="images/burger.png" alt="">
         </button>
       </div>
       <hr />
     </header>
+    <div class="menuBurger hideMenuburger">
+      <button>
+        <h3>Sing In</h3>
+
+      </button>
+      <button>
+        <h3>Create account</h3>
+
+      </button>
+      <button onclick="afficheSide()">
+        <img src="images/panier.png" alt="panier" id="sidepanier" />
+
+      </button>
+        
+
+    </div>
 
       <main id="detail">
         <div class="SIDEBAR">
@@ -552,12 +568,7 @@
 
         <h4>Copy Right 2023</h4>
       </footer>
-
-
-
-
-
-
+     
 
       <script src="script.js"></script>
 </body>
